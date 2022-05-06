@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="TeacherTable" table="teachers">
+        <id name="ID" column="ID">
+            <generator class="increment"/>
+        </id>
+        <property name="NAME" type="string" column="NAME"/>
+        <property name="SUBJECT_ID" type="int" column="SUBJECT_ID"/>
+        <property name="CLASS_ID" type="int" column="CLASS_ID"/>
+    </class>
+</hibernate-mapping>

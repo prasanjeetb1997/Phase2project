@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>       
+  <session-factory>
+    <!-- Database connection settings -->
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/learners_academy</property>
+    <property name="connection.username">prasanjeet</property>
+    <property name="connection.password">6950</property>
+     <mapping resource = "ClassTable.hbm.xml"/>
+     <mapping resource = "SubjectTable.hbm.xml"/>
+     <mapping resource = "TeacherTable.hbm.xml"/>
+     <mapping resource = "StudentTable.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
